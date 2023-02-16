@@ -77,8 +77,8 @@ export const getServerSideProps: GetServerSideProps<DashboardProps> = async (con
     }
   } catch (error) {
     // authentication failed
-    return { props: { isAuthorized: false, username: '', appID: passage.appID } };
   }
+  return { props: { isAuthorized: false, username: '', appID: passage.appID } };
 }
 
 
